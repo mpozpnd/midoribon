@@ -16,7 +16,7 @@ N = X.shape[0]
 
 stan_data = {'N': N, 'Y': X}
 
-fit = pystan.stan(file='kubo11.stan', data=stan_data, iter=10000, chains=1)
+fit = pystan.stan(file='model11.stan', data=stan_data, iter=10000, chains=1)
 
 
 fit.plot()
